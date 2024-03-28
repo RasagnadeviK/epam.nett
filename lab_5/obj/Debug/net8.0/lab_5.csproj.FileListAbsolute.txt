@@ -1,0 +1,14 @@
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.AssemblyInfoInputs.cache
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.AssemblyInfo.cs
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.csproj.CoreCompileInputs.cache
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\bin\Debug\net8.0\lab_5.exe
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\bin\Debug\net8.0\lab_5.deps.json
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\bin\Debug\net8.0\lab_5.runtimeconfig.json
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\bin\Debug\net8.0\lab_5.dll
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\bin\Debug\net8.0\lab_5.pdb
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.dll
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\refint\lab_5.dll
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.pdb
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\lab_5.genruntimeconfig.cache
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lab_5\obj\Debug\net8.0\ref\lab_5.dll
