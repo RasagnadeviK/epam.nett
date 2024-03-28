@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git-Checkout') {
+            steps {
+                echo "Start Git Checkout"
+                // Get some code from a GitHub repository
+                git credentialsId: '4edc916e-d436-47bf-a0d8-775199bfa17d', url: 'https://github.com/TJayanth/MVC-CRUD.git'
+            
+            }
+        }
+        stage('Restore packages'){
+               steps{
+                   
+                 }
+        }
+         stage('Build Project'){
+               steps{
+                   
+                 }
+        }
+    }
+}

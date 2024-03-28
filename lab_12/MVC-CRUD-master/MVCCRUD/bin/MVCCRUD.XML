@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MVCCRUD</name>
+    </assembly>
+    <members>
+        <member name="F:MVCCRUD.Controllers.BaseController._empDal">
+            <summary>
+            Instance for EmpDAL
+            </summary>
+        </member>
+        <member name="F:MVCCRUD.Controllers.BaseController._empModel">
+            <summary>
+            Instance for EmpModel
+            </summary>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Create(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Creates user details
+            </summary>
+            <param name="empModel">Gets empModel</param>
+            <returns>Returns read</returns>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Edit(System.Int32)">
+            <summary>
+            Edits the employee details for the given id
+            </summary>
+            <param name="id">Employee id</param>
+            <returns>Returns the read</returns>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Details(System.Int32)">
+            <summary>
+            Displays details for the given employee id
+            </summary>
+            <param name="id">Employee id</param>
+            <returns>Returns Employee details for the given id</returns>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Edit(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Edit Employee details for the given id
+            </summary>
+            <param name="empModel">EmpModel object</param>
+            <returns>After successful updation redirects to Read method</returns>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Read">
+            <summary>
+            Read all employee details
+            </summary>
+            <returns>Returns List of employees</returns>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Delete(System.Int32)">
+            <summary>
+            Deletes employee details for the given id
+            </summary>
+            <param name="id">Employee id</param>
+            <returns>Returns View with employee details for delete</returns>
+        </member>
+        <member name="M:MVCCRUD.Controllers.EmployeeController.Delete(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Deletes the employee for the given model
+            </summary>
+            <param name="empModel">Employee object</param>
+            <returns>After deleting the records redirects to Read method </returns>
+        </member>
+        <member name="F:MVCCRUD.Service.BaseService._connectionString">
+            <summary>
+            Gets the connection string from the web config
+            </summary>
+        </member>
+        <member name="M:MVCCRUD.Service.BaseService.GetDBString(System.Object)">
+            <summary>
+            Returns a friendly string. If obj is DBNull or null, it returns an empty string.
+            </summary>
+            <param name="obj">String, DBNull or null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MVCCRUD.Service.BaseService.GetDBInt(System.Object)">
+            <summary>
+            Returns a friendly integer. If obj is DBNull or null, it returns 0.
+            </summary>
+            <param name="obj">Can be a string, DBNull or null.</param>
+            <returns>0 if param was DBNull or null.</returns>
+        </member>
+        <member name="P:MVCCRUD.Service.BaseService.ConnectionString">
+            <summary>
+            Instance creation
+            </summary>
+        </member>
+        <member name="M:MVCCRUD.DAL.EmpDAL.Create(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Creates a new record for Employee
+            </summary>
+            <param name="empModel">EmpModel object as params</param>
+            <returns>Returns id of the employee</returns>
+        </member>
+        <member name="M:MVCCRUD.DAL.EmpDAL.Read">
+            <summary>
+            Gets all employee details as list of employees
+            </summary>
+            <returns>Returns List of EmpModel</returns>
+        </member>
+        <member name="M:MVCCRUD.DAL.EmpDAL.Update(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Updates the Employee for the given id
+            </summary>
+            <param name="empModel">Employee model object</param>
+            <returns>Returns int if successfully updated</returns>
+        </member>
+        <member name="M:MVCCRUD.DAL.EmpDAL.Delete(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Deletes the employee for the given id
+            </summary>
+            <param name="empModel">EmpModel object</param>
+            <returns></returns>
+        </member>
+        <member name="M:MVCCRUD.DAL.EmpDAL.GetEmployee(MVCCRUD.Models.EmpModel)">
+            <summary>
+            Gets employee details for the given id
+            </summary>
+            <param name="empModel">Employee Model</param>
+            <returns>Returns Employee details</returns>
+        </member>
+        <member name="P:MVCCRUD.Models.EmpModel.Id">
+            <summary>
+            Employee id
+            </summary>
+        </member>
+        <member name="P:MVCCRUD.Models.EmpModel.Name">
+            <summary>
+            Employee name
+            </summary>
+        </member>
+        <member name="P:MVCCRUD.Models.EmpModel.Age">
+            <summary>
+            Employee age
+            </summary>
+        </member>
+    </members>
+</doc>

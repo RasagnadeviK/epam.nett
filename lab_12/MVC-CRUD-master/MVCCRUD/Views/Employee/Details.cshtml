@@ -1,0 +1,37 @@
+﻿@model MVCCRUD.Models.EmpModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div id="title">
+	<h3 class="text-center">Employee Details</h3>
+</div>
+
+<div class="col-md-4"></div>
+<div class="col-md-8">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Read") |
+	@Html.ActionLink("DashBoard", "Index") |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
+</p>

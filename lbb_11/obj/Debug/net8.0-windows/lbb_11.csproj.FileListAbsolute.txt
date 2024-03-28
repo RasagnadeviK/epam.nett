@@ -1,0 +1,6 @@
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lbb_11\obj\Debug\net8.0-windows\lbb_11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lbb_11\obj\Debug\net8.0-windows\lbb_11.AssemblyInfoInputs.cache
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lbb_11\obj\Debug\net8.0-windows\lbb_11.AssemblyInfo.cs
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lbb_11\obj\Debug\net8.0-windows\lbb_11.csproj.CoreCompileInputs.cache
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lbb_11\obj\Debug\net8.0-windows\Form1.resources
+C:\Users\sampa\OneDrive\Desktop\COLLEGE-CSIT\Sem6\.net\Lab_2\lbb_11\obj\Debug\net8.0-windows\lbb_11.csproj.GenerateResource.cache

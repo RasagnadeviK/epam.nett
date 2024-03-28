@@ -1,0 +1,63 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git-Checkout') {
+            steps {
+                echo "Start Git Checkout"
+                echo "Workspace: ${Workspace}"
+                echo "Branch: ${BRANCH_NAME}"
+                echo "Build Number: ${BUILD_NUMBER}"
+                echo "Build Id: ${BUILD_ID}"
+                echo "Build Display : ${BUILD_DISPLAY_NAME}"
+                echo "Build URL : ${BUILD_URL}"
+                echo "Job Name: ${JOB_NAME}"
+                echo "Build Tag: ${BUILD_TAG}"
+                echo "Node Name: ${NODE_NAME}"
+                echo "GIT_URL: ${GIT_URL}"
+                echo "GIT_BRANCH: ${GIT_BRANCH}"
+                echo "GIT_COMMIT: ${GIT_COMMIT}"
+                // Get some code from a GitHub repository
+                //  git credentialsId: '4edc916e-d436-47bf-a0d8-775199bfa17d', url: 'https://github.com/TJayanth/MVC-CRUD.git'
+                
+            }
+        }
+        stage('Restore packages'){
+               steps{
+                   echo "Restore Package"
+                    
+                 }
+        }
+        stage('Clean'){
+           steps{
+            //    bat "\"${tool 'MsBuild'}\"\\MsBuild.exe MVCCRUD.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /t:Clean"
+               bat "\"${tool 'MsBuild'}\"\\MsBuild.exe C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\mvccrud_multibranch_1_master\\MVCCRUD.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /t:Clean"
+               
+            }
+         }
+        stage('Build'){
+           steps{
+               echo "Build"
+            //    bat "\"${tool 'MsBuild'}\"\\MsBuild.exe MVCCRUD.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /t:Rebuild"
+               bat "\"${tool 'MsBuild'}\"\\MsBuild.exe C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\mvccrud_multibranch_1_master\\MVCCRUD.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /t:Rebuild"
+               echo "${tool 'MsBuild'}" 
+            }
+         }
+
+         stage('Release'){
+           steps{
+               echo "Ready for release"
+               archiveArtifacts artifacts: 'MVCCRUD/bin/*',
+                   allowEmptyArchive: true,
+                   fingerprint: true,
+                   onlyIfSuccessful: true
+            }
+         }
+         stage('Clean-up'){
+             steps{
+                 echo "Cleanup"
+                 //deleteDir()
+             }
+         }
+    }
+}
